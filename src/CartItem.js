@@ -54,7 +54,7 @@ this.state = {
 
 render(){
 
-  const {price,title,qty} = this.state;
+  const {price,title,qty} = this.props.product;
 
 return(
 
