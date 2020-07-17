@@ -1,9 +1,9 @@
 import React from 'react';
-import CardItem from './CartItem';
+import Card from './Cart';
 function App() {
   return (
     <div className="App">
-      <CardItem/>
+      <Card/>
     </div>
   );
 }

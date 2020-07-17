@@ -8,7 +8,7 @@ super();
 this.state = {
   price: 222,
   title:'Mobile',
-  qty: 10,
+  qty: 1,
   img: ''
 
 }
@@ -31,6 +31,25 @@ this.state = {
 
  });
  }
+ 
+ decreaseQuantity = () => {
+
+  const {qty} = this.state;
+
+  if(qty == 0 ){
+    return;
+  }
+  
+   this.setState((prevState) => {
+  
+     return {
+  
+        qty : prevState.qty - 1
+  
+     }
+  
+   });
+   }
 
 
 render(){
@@ -59,6 +78,7 @@ return(
      alt="decrease" 
      className="action-icons" 
      src="https://image.flaticon.com/icons/svg/1665/1665612.svg"
+     onClick = {this.decreaseQuantity}
      />
      <img 
      alt="delete" 
