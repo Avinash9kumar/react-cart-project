@@ -15,8 +15,8 @@ const CartItem = (props) => {
       </div>
       <div className="right-block">
         <div style={ { fontSize: 25 } }>{title}</div>
-        <div style={ { color: '#777' } }>Rs {price} </div>
-        <div style={ { color: '#777' } }>Qty: {qty} </div>
+        <div style={ { color: '#777' } }>Price:  ₹{price} </div>
+        <div style={ { color: '#777' } }>Qty: {qty}(unit) </div>
         <div className="cart-item-actions">
           {/* Buttons */}
           <img
@@ -45,10 +45,8 @@ const CartItem = (props) => {
 
 const styles = {
   image: {
-    height: 110,
-    width: 110,
-    borderRadius: 4,
-    background: '#ccc'
+    height: 130,
+    width: 140
   }
 }
 
